@@ -1,11 +1,11 @@
 import React from 'react';
 import './tooltip.scss';
 
-export default function index({ setBold }) {
+export default function index({ formatText }) {
   return (
     <div className="tool-tip-container">
-      <span onClick={() => setBold()} className="tooltip-text">B</span>
-      <span className="tooltip-text">I</span>
+      <span onClick={() => formatText('bold')} className="tooltip-text">B</span>
+      <span onClick={() => formatText('italic')} className="tooltip-text">I</span>
     </div>
   )
 }
