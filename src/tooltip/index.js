@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { markdownOptions } from '../utils/markdownOptions';
 import './tooltip.scss';
 
-export default function index({ formatText, selectedText, originalFullText }) {
+export default function ToolTip({ formatText, selectedText, originalFullText }) {
   /**
    * 
    * @param {String} markdownType The markdown type. Could be any of Bold, italics,
@@ -45,3 +46,9 @@ export default function index({ formatText, selectedText, originalFullText }) {
     </div>
   )
 }
+
+ToolTip.propTypes = {
+  formatText: PropTypes.func,
+  selectedText: PropTypes.string,
+  originalFullText: PropTypes.string
+};
