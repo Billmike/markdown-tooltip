@@ -1,11 +1,21 @@
 import React from 'react';
+import { markdownOptions } from '../utils/markdownOptions';
 import './tooltip.scss';
 
 export default function index({ formatText }) {
   return (
     <div className="tool-tip-container">
-      <span onClick={() => formatText('bold')} className="tooltip-text">B</span>
-      <span onClick={() => formatText('italic')} className="tooltip-text">I</span>
+      {
+        markdownOptions.map(({ markdownType, icon }) => (
+          <button
+            key={markdownType}
+            className="tooltip-text"
+            onClick={() => formatText(markdownType)}
+          >
+            {icon}
+          </button>
+        ))
+      }
     </div>
   )
 }
