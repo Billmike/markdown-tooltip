@@ -41,6 +41,9 @@ function App() {
       case 'italic':
         formattedString = `*${selectedTextState.selectedText}*`;
         break;
+      case 'quotes':
+        formattedString = `>${selectedTextState.selectedText}`;
+        break;
       default:
         break;
     }
