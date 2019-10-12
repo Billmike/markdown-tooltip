@@ -38,7 +38,7 @@ function App() {
       case 'bold':
         formattedString = `**${selectedTextState.selectedText}**`;
         break;
-      case 'italic':
+      case 'italics':
         formattedString = `*${selectedTextState.selectedText}*`;
         break;
       case 'quotes':
