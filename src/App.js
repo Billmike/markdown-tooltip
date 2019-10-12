@@ -27,27 +27,11 @@ function App() {
 
   /**
    * Format text
-   * @param {String} formatType The markdown format type (Bold, italic, quotes, etc)
+   * @param {String} formattedFullText The formatted full text with the markdown
    *
    * @returns {void}
    */
-  const formatText = (formatType) => {
-    let formattedString;
-    let formattedFullText;
-    switch (formatType) {
-      case 'bold':
-        formattedString = `**${selectedTextState.selectedText}**`;
-        break;
-      case 'italics':
-        formattedString = `*${selectedTextState.selectedText}*`;
-        break;
-      case 'quotes':
-        formattedString = `>${selectedTextState.selectedText}`;
-        break;
-      default:
-        break;
-    }
-    formattedFullText = selectedTextState.originalFullText.replace(selectedTextState.selectedText, formattedString);
+  const formatText = (formattedFullText) => {
     setSelectedTextState({ ...selectedTextState, formattedFullText, value: formattedFullText });
   }
 
@@ -75,6 +59,8 @@ function App() {
       />
       {selectedTextState.selectedText && <ToolTip
         formatText={formatText}
+        selectedText={selectedTextState.selectedText}
+        originalFullText={selectedTextState.originalFullText}
       />}
       {
         selectedTextState.formattedFullText && <MarkDown
