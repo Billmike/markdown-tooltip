@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { markdownOptions } from '../utils/markdownOptions';
+import { markdownOptions } from '../../utils/markdownOptions';
 import './tooltip.scss';
 
 export default function ToolTip({ formatText, selectedText, originalFullText }) {
@@ -31,18 +31,20 @@ export default function ToolTip({ formatText, selectedText, originalFullText }) 
   }
 
   return (
-    <div className="tool-tip-container">
+    <div className="tooltip-container">
       {
         markdownOptions.map(({ markdownType, icon }) => (
-          <button
-            key={markdownType}
-            className="tooltip-text"
-            onClick={() => markdownFormat(markdownType)}
-          >
+          <div key={markdownType} className="tooltip-option">
+            <button
+              className={`tooltip-option-btn tooltip-option-btn-${markdownType}`}
+              onClick={() => markdownFormat(markdownType)}
+            >
             {icon}
-          </button>
+            </button>
+          </div>
         ))
       }
+      <div className="tooltip-caret" />
     </div>
   )
 }

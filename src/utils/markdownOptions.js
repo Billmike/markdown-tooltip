@@ -5,10 +5,18 @@ export const markdownOptions = [
   },
   {
     markdownType: 'italics',
-    icon: 'I'
+    icon: 'i'
   },
   {
     markdownType: 'quotes',
     icon: 'Q'
+  },
+  {
+    markdownType: 'largeText',
+    icon: 'T'
+  },
+  {
+    markdownType: 'smallText',
+    icon: 'T'
   }
 ];

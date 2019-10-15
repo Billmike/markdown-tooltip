@@ -1,0 +1,56 @@
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dotted black;
+  background-color: black;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 7px;
+  width: 300px;
+  height: 30px;
+
+  .tooltip-option {
+    border-right: 1px solid #595858;
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20%;
+  
+    &:last-child{
+      border: 0;
+    }
+
+    &-btn {
+      font-family: 'Merriweather', serif;
+      cursor: pointer;
+      background: black;
+      color: white;
+      border: 0;
+      outline: none;
+      font-size: 20px;
+
+      &-italics {
+        font-style: italic;
+      }
+      &-smallText {
+        font-size: 15px;
+        margin-bottom: -5px;
+      }
+    }
+  }
+
+  .tooltip-caret {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid black;
+  }
+}

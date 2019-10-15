@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip component it renders the tooltip component 1`] = `
+<div
+  className="tooltip-container"
+>
+  <div
+    className="tooltip-option"
+    key="bold"
+  >
+    <button
+      className="tooltip-option-btn tooltip-option-btn-bold"
+      onClick={[Function]}
+    >
+      B
+    </button>
+  </div>
+  <div
+    className="tooltip-option"
+    key="italics"
+  >
+    <button
+      className="tooltip-option-btn tooltip-option-btn-italics"
+      onClick={[Function]}
+    >
+      i
+    </button>
+  </div>
+  <div
+    className="tooltip-option"
+    key="quotes"
+  >
+    <button
+      className="tooltip-option-btn tooltip-option-btn-quotes"
+      onClick={[Function]}
+    >
+      Q
+    </button>
+  </div>
+  <div
+    className="tooltip-option"
+    key="largeText"
+  >
+    <button
+      className="tooltip-option-btn tooltip-option-btn-largeText"
+      onClick={[Function]}
+    >
+      T
+    </button>
+  </div>
+  <div
+    className="tooltip-option"
+    key="smallText"
+  >
+    <button
+      className="tooltip-option-btn tooltip-option-btn-smallText"
+      onClick={[Function]}
+    >
+      T
+    </button>
+  </div>
+  <div
+    className="tooltip-caret"
+  />
+</div>
+`;
