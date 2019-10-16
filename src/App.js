@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MarkDown from 'react-markdown';
-import ToolTip from './tooltip';
+import ToolTip from './components/tooltip';
 import './App.css';
 
 function App() {
