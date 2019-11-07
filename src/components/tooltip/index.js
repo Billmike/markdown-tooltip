@@ -23,6 +23,15 @@ export default function ToolTip({ formatText, selectedText, originalFullText }) 
       case 'quotes':
         formattedString = `>${selectedText}`;
         break;
+      case 'largeText':
+        formattedString = `# ${selectedText}`;
+        break;
+      case 'smallText':
+        formattedString = `### ${selectedText}`;
+        break;
+      case 'code':
+        formattedString = `\`\`\`${selectedText}\`\`\``;
+        break;
       default:
         break;
     }
