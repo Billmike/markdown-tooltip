@@ -8,13 +8,12 @@
   color: #fff;
   padding: 5px 0;
   border-radius: 7px;
-  width: 300px;
-  height: 30px;
+  width: 200px;
+  height: 20px;
 
   .tooltip-option {
     border-right: 1px solid #595858;
     display: flex;
-    padding: 0 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -32,13 +31,13 @@
       color: white;
       border: 0;
       outline: none;
-      font-size: 20px;
+      font-size: 15px;
 
       &-italics {
         font-style: italic;
       }
       &-smallText {
-        font-size: 15px;
+        font-size: 11px;
         margin-bottom: -5px;
       }
     }
@@ -49,8 +48,8 @@
     height: 0;
     position: absolute;
     bottom: -12px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid black;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 11px solid black;
   }
 }

@@ -18,5 +18,9 @@ export const markdownOptions = [
   {
     markdownType: 'smallText',
     icon: 'T'
+  },
+  {
+    markdownType: 'code',
+    icon: 'C'
   }
 ];
